@@ -8,6 +8,12 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
   end
 
+  def destroy
+    # flash[:notice] = "Project Destroyed!"
+    Project.find(params[:id]).destroy
+    redirect_to root_path
+  end
+
   def new
     # The new form needs access to a @project
     @project = Project.new()
