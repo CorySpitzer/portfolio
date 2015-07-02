@@ -1,3 +1,12 @@
+<% if @project.errors.any? %>
+  <h3 id='error-header'>Please fix these errors:</h3>
+  <ul>
+    <% @project.errors.full_messages.each do |error_message|%>
+      <li><%= error_message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
 <%= form_for @project do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
