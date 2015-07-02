@@ -1,5 +1,7 @@
 <h2>Projects</h2>
 
+<%= flash[:notice] %>
+
 <% @projects.each do |project| %>
   <h3>
     <%= link_to project.name, project_path(project) %>

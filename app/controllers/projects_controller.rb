@@ -11,6 +11,7 @@ class ProjectsController < ApplicationController
   def destroy
     # flash[:notice] = "Project Destroyed!"
     Project.find(params[:id]).destroy
+    flash[:notice] = "Project Destroyed!"
     redirect_to root_path
   end
 
@@ -27,8 +28,21 @@ class ProjectsController < ApplicationController
       flash[:notice] = "Project Added!"
       redirect_to root_path
     else
-      flash[:notice] = "Try again, please"
+      # flash[:notice] = "Try again, please"
       render :new
+    end
+  end
+
+  def edit
+    @project = Project.find(params[:id])
+  end
+
+  def update
+    @project = Project.find(params[:id])
+    if @project.update(project_params)
+      redirect_to project_path(@project)
+    else
+      render :edit
     end
   end
 

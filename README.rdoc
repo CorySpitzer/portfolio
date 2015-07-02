@@ -4,6 +4,10 @@ A personal Portfolio App
 By Cory Spitzer
 MIT License
 
+TODO: The edit project button has issues, but going directly to the page by
+typing in the path works.
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
