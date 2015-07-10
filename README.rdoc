@@ -7,6 +7,17 @@ MIT License
 TODO: The edit project button has issues, but going directly to the page by
 typing in the path works.
 
+Install and run the app (assuming you have the right tools installed on a Unix system):
+
+  * Clone the repo and `cd` into the project directory
+
+  * launch 'postgres'
+
+  * run `rake db:setup`
+
+  * start the rails server `rails s`
+
+  * Point browser to localhost:3000
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
