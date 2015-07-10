@@ -5,6 +5,7 @@ require 'rails_helper'
 # but for now this will work:
 describe 'the add project form' do
   it 'adds a project using the form' do
+    create_and_login_user :admin
     visit new_project_path
     fill_in 'project_name', with: 'test project1'
     fill_in 'project_description', with: 'testing'
@@ -13,6 +14,7 @@ describe 'the add project form' do
   end
 
   it 'gives an error when nothing is entered' do
+    create_and_login_user :admin
     visit new_project_path
     click_on 'Create Project'
     expect(page).to have_content 'errors'

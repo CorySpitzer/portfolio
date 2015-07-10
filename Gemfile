@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'devise'
+gem 'bcrypt'
 
 
 group :development do
@@ -22,11 +23,11 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'launchy'
   gem 'pry'
-  gem 'factory_girl_rails'
 end
 
 group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
+  gem 'factory_girl_rails'
   gem 'simplecov', require: false
 end

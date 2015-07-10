@@ -1,4 +1,7 @@
 class ProjectsController < ApplicationController
+  # Require a user to be logged in before using this controller:
+  # before_filter :authenticate_user!, except: [:index, :show]
+  before_filter :admin_only, except: [:index, :show]
 
   def index
     @projects = Project.all
@@ -47,7 +50,16 @@ class ProjectsController < ApplicationController
   end
 
   private
+
   def project_params
     params.require(:project).permit(:name, :description)
   end
+
+  def admin_only
+    # unless logged in as admin:
+    unless current_user and current_user.admin
+      redirect_to root_path, alert: 'No, no, no ;)'
+    end
+  end
+
 end
