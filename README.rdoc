@@ -4,6 +4,8 @@ A personal Portfolio App
 By Cory Spitzer
 MIT License
 
+See it at: cory-spitzers-portfolio.herokuapp.com/
+
 TODO: The edit project button has issues, but going directly to the page by
 typing in the path works.
 
