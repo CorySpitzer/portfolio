@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all
+    # will_paginate makes the 'page' method available
+    @posts = Post.all.order('created_at').page(params[:page])
   end
 end

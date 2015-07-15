@@ -6,7 +6,16 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-users = User.create([{ email: 'admin@admin.com',
-                       password: 'ReallyGoodPassword', admin: true},
-                     { email: 'guest@guest.com',
-                       password: '12341234', admin: false}])
+admin = User.create email: 'admin@admin.com',
+                    password: 'ReallyGoodPassword',
+                    admin: true
+
+guest = User.create email: 'guest@guest.com',
+                    password: '12341234',
+                    admin: false
+
+(0..45).each do |i|
+  post = Post.create title: "Test Post #{i}",
+               body: "This is test post #{i}'s body."
+  admin.posts << post
+end
