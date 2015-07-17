@@ -1,7 +1,7 @@
-<%= simple_form_for(@reference) do |f| %>
-  <%= f.input :referee %>
+<%= simple_form_for(@reference, remote: true) do |f| %>
+  <%= f.input :referee, label: 'Name' %>
   <%= f.input :referee_info %>
-  <%= f.input :body %>
+  <%= f.input :body, label: 'Reference' %>
 
   <%= f.submit %>
 <% end %>

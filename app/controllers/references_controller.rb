@@ -3,7 +3,7 @@ class ReferencesController < ApplicationController
 
   def index
     @references = Reference.all
-    # @reference = Reference.new
+    @reference = Reference.new
   end
 
   def new
@@ -17,14 +17,14 @@ class ReferencesController < ApplicationController
   # called on a POST to the references_path, such as a form submission
   def create
     @reference = Reference.new reference_params
-    # if @reference.save
+    if @reference.save
       respond_to do |format|
         format.html
         format.js
       end
-    # else
-    #   render :new
-    # end
+    else
+      render :new
+    end
   end
 
 private

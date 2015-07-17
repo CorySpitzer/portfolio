@@ -1,3 +1,2 @@
-// $('new-reference-link').hide().after('<%= j render("form") %>')
-alert('hi');
-$('new-reference-form').html('<%= j render("form") %>')
+// Calling $('new-reference-form') will not work! but this will:
+$('#new-reference-form').html('<%= j render("form") %>')
