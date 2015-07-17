@@ -11,13 +11,13 @@ describe 'the add reference form' do
     expect(page).to have_content 'info'
   end
 
-  # it 'adds a reference', js: true do
-  #   visit references_path
-  #   click_on 'Add Reference'
-  #   fill_in 'Name', with: 'Blarb'
-  #   fill_in 'Referee info', with: 'Software Dev'
-  #   fill_in 'Reference', with: 'He is really cool'
-  #   click_on 'Create Reference'
-  #   expect(page).to have_content 'Blarb Software'
-  # end
+  it 'adds a reference', js: true do
+    visit references_path
+    click_on 'Add Reference'
+    fill_in 'Name', with: 'Blarb'
+    fill_in 'Referee info', with: 'Software Dev'
+    fill_in 'Reference', with: 'He is really cool'
+    click_on 'Create Reference'
+    expect(page).to have_content 'Blarb Software'
+  end
 end

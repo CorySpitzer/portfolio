@@ -8,6 +8,10 @@
 
 <h3>References:</h3>
 
+<div id="references">
+
+</div>
+
 <div class='references'>
   <% if @references.any? %>
     <% @references.each do |reference| %>
@@ -24,3 +28,4 @@
     </p>
   <% end %>
 </div>
+<%= will_paginate @references %>

@@ -2,8 +2,9 @@ class ReferencesController < ApplicationController
   respond_to :html, :js
 
   def index
-    @references = Reference.all
-    @reference = Reference.new
+    # Get the references ready for pagination
+    @references = Reference.all.paginate(page: params[:page], per_page: 3)
+    # @reference = Reference.new
   end
 
   def new
