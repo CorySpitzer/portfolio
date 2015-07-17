@@ -11,7 +11,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'devise'
 gem 'bcrypt'
 gem 'will_paginate', '> 3.0'
-
+gem 'simple_form'
 
 group :development do
   gem 'byebug'

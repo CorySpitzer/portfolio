@@ -19,3 +19,7 @@ guest = User.create email: 'guest@guest.com',
                body: "This is test post #{i}'s body."
   admin.posts << post
 end
+
+Reference.create referee: 'Elias Winston',
+                 referee_info: 'Founder of TaskMap',
+                 body: 'I fully recommend Mr. Spitzer!'
