@@ -1,8 +1,9 @@
 ## A personal Portfolio App
 ### By Cory Spitzer
 
-MIT License
+[MIT License](http://opensource.org/licenses/MIT)
 
+*tested and built with: Rails 4.2.3 and Ruby 2.2.0*
 
 ###### \*Under Construction\* but see a version of it up at [Heroku](https://cory-spitzers-portfolio.herokuapp.com/)
 
@@ -12,7 +13,7 @@ TODO:
  * Fix the 'the add reference form adds a reference' spec, which fails because
    it wants AJAX to reload the page.
 
-Install and run the app (assuming you have the right tools installed on a
+Install and run the app (assuming you have the necessary tools installed on a
 Unix system):
 
   * Clone the repo and `cd` into the project directory
@@ -25,7 +26,6 @@ Unix system):
 
   * Point browser to localhost:3000
 
-tested and built with: Rails 4.2.3 and Ruby 2.2.0
 
 To test the app, run `rspec`
 
