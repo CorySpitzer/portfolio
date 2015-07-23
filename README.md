@@ -29,5 +29,5 @@ Unix system):
 
 To test the app, run `rspec`
 
-To see test coverage point a browser to
+To see test coverage (after you've run `rspec`) point a browser to
 /path/to/app/coverage/index.html#_AllFiles
