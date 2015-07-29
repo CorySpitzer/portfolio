@@ -11,8 +11,7 @@ TODO:
  * Fix the 'the add reference form adds a reference' spec, which fails because
    it wants AJAX to reload the page.
 
-Install and run the app (assuming you have the necessary tools installed on a
-Unix system):
+#### Installation (assuming you have the necessary tools installed on a Unix system):
 
   * Clone the repo and `cd` into the project directory
 
@@ -29,7 +28,12 @@ Unix system):
   * Enjoy!
 
 
-To test the app, run `rspec`
+#### Test the app:
 
-To see test coverage (after you've run `rspec`) point a browser to
-/path/to/app/coverage/index.html#_AllFiles (for example: file:///Users/Guest/Desktop/portfolio/coverage/index.html#_AllFiles)
+  * run `rspec`
+
+  * To see test coverage (after you've run `rspec`) point a browser to /path/to/app/coverage/index.html (for example: file:///Users/Guest/Desktop/portfolio/coverage/index.html#_AllFiles)
+
+#### Deploy it to Heroku:
+
+  * See devcenter.heroku.com/articles/getting-started-with-rails4#local-workstation-setup

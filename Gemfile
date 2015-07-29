@@ -13,6 +13,14 @@ gem 'bcrypt'
 gem 'will_paginate', '> 3.0'
 gem 'simple_form'
 
+group :production do
+  # Make heroku work better, see
+  # devcenter.heroku.com/articles/getting-started-with-rails4#local-workstation-setup
+  # and
+  # github.com/heroku/rails_12factor
+  gem 'rails_12factor'
+end
+
 group :development do
   gem 'byebug'
   gem 'web-console'
@@ -34,3 +42,5 @@ group :test do
   gem 'poltergeist'
   gem 'database_cleaner'
 end
+
+ruby "2.2.0"
