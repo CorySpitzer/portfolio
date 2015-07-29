@@ -18,13 +18,17 @@ Unix system):
 
   * Clone the repo and `cd` into the project directory
 
-  * launch `postgres`
+  * Install the required gems with `bundle install`
 
-  * run `rake db:setup`
+  * Launch `postgres`
 
-  * start the rails server `rails s`
+  * Run `rake db:setup`
+
+  * Start the rails server `rails s`
 
   * Point browser to localhost:3000
+
+  * Enjoy!
 
 
 To test the app, run `rspec`
