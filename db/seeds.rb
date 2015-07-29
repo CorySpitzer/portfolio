@@ -23,3 +23,6 @@ end
 Reference.create referee: 'Elias Winston',
                  referee_info: 'Founder of TaskMap',
                  body: 'I fully recommend Mr. Spitzer!'
+
+Project.create name: 'Personal Portfolio App',
+               description: "A personal portfolio application - the very project you are using right now!"

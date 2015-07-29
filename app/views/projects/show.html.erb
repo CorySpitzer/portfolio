@@ -6,5 +6,5 @@
   <%= link_to 'Delete Project', project_path(@project), class: "btn btn-danger",
                data: {confirm: 'Destroy it?!',
                       method: 'delete'} %>
-  <%= link_to 'Edit Project', project_path(@project), class: "btn btn-warning" %>
+  <%= link_to 'Edit Project', edit_project_path(@project), class: "btn btn-warning" %>
 </div>
