@@ -34,4 +34,4 @@ Unix system):
 To test the app, run `rspec`
 
 To see test coverage (after you've run `rspec`) point a browser to
-/path/to/app/coverage/index.html#_AllFiles
+/path/to/app/coverage/index.html#_AllFiles (for example: file:///Users/Guest/Desktop/portfolio/coverage/index.html#_AllFiles)
