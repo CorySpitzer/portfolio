@@ -8,8 +8,6 @@
 ###### \*Under Construction\* but see a version of it up at [Heroku](https://cory-spitzers-portfolio.herokuapp.com/)
 
 TODO:
- * The edit project button has issues, but going directly to the page by
-   typing in the path works.
  * Fix the 'the add reference form adds a reference' spec, which fails because
    it wants AJAX to reload the page.
 
