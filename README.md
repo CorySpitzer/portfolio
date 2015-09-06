@@ -5,7 +5,7 @@
 
 *tested and built with: Rails 4.2.3 and Ruby 2.2.0*
 
-###### \*Under Construction\* but see a version of it up at [Heroku](https://cory-spitzers-portfolio.herokuapp.com/)
+###### \*Under Construction\* but see a version of it up at [Heroku](http://www.coryspitzer.com/)
 
 TODO:
  * Fix the 'the add reference form adds a reference' spec, which fails because
