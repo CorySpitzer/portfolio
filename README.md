@@ -21,7 +21,7 @@ TODO:
 
   * Install the required gems with `bundle install`
 
-  * Launch `postgres`
+  * Make sure that the Postgres database is running, see the [docs](http://www.postgresql.org/docs/9.4/static/server-start.html) for instructions
 
   * Run `rake db:setup`
 
