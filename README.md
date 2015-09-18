@@ -24,7 +24,7 @@ TODO:
   * Make sure that the Postgres database is running, see the [docs](http://www.postgresql.org/docs/9.3/static/server-start.html) for instructions
 
   * Run `rake db:setup`
-    * If you get a `PG::ConnectionBad: FATAL:  password authentication failed for user "postgres"`, fix it by running `sudo -u postgres psql` then `ALTER USER postgres PASSWORD 'newPassword';` in the psql prompt. See config/database.yml for the password and username. See the first answer on [StackOverflow](http://stackoverflow.com/questions/7695962/postgresql-password-authentication-failed-for-user-postgres)
+    * If you get a `PG::ConnectionBad: FATAL:  password authentication failed for user "postgres"`, fix it by running `sudo -u postgres psql` then `ALTER USER postgres PASSWORD 'newPassword';` in the psql prompt. See config/database.yml for the password and username. See the first answer on [StackOverflow](http://stackoverflow.com/questions/7695962/postgresql-password-authentication-failed-for-user-postgres) for details.
 
   * Start the rails server `rails s`
 
