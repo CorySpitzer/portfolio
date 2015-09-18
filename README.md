@@ -41,4 +41,4 @@ TODO:
 
 #### Deploy it to Heroku:
 
-  * See devcenter.heroku.com/articles/getting-started-with-rails4#local-workstation-setup
+  * See [these intructions](devcenter.heroku.com/articles/getting-started-with-rails4#local-workstation-setup)
