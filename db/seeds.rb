@@ -6,8 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-admin = User.create email: 'admin@admin.com',
-                    password: 'ReallyGoodPassword',
+admin = User.create email: 'coryspitzer@gmail.com',
+                    # set this environment variable in your .bashrc or similar; 
+                    # see tinyurl.com/pdfp2be
+                    password: ENV['PORTFOLIO_PASSWORD'],
                     admin: true
 
 guest = User.create email: 'guest@guest.com',
