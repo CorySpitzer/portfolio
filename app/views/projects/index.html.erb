@@ -21,6 +21,6 @@
     <%= link_to project.name, project_path(project) %>
   </h3>
   <p>
-    <%= project.description %>
+    <%= project.description.html_safe %>
   </p>
 <% end %>

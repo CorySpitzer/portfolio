@@ -16,11 +16,11 @@
   <% if @references.any? %>
     <% @references.each do |reference| %>
       <hr>
-      <h4> <%= reference.referee %> </h4>
-      <h5> <%= reference.referee_info %> </h5>
-      <p>
-        <%= reference.body %>
-      </p>
+      <h4> <%= reference.referee.html_safe %> </h4>
+      <em> <%= reference.referee_info.html_safe %> </em>
+      <div class='well'>
+        <%= reference.body.html_safe %>
+      </div>
     <% end %>
   <% else %>
     <p>
