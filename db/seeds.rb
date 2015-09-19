@@ -10,7 +10,7 @@ admin = User.create email: 'coryspitzer@gmail.com',
                     # set this environment variable in a .env file and make sure
                     # to add that file to your gitignore if the code is public;
                     # see env.example and tinyurl.com/pdfp2be for details
-                    password: ENV['PORTFOLIO_PASSWORD'],
+                    password: ENV['ADMIN_PASSWORD'],
                     admin: true
 
 guest = User.create email: 'guest@coryspitzer.com',
