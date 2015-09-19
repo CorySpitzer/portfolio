@@ -47,4 +47,5 @@ Reference.create referee: 'Jessica Engel',
 
 
 Project.create name: 'Personal Portfolio App',
-               description: "A personal portfolio application - the very project you are using right now!"
+               description: 'A personal portfolio application - the very project you are using right now!',
+               link: 'https://github.com/CorySpitzer/portfolio'
