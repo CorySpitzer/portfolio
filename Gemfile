@@ -32,6 +32,8 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'launchy'
   gem 'pry'
+  # Allow hiding sensitive info
+  gem 'dotenv-rails'
 end
 
 group :test do

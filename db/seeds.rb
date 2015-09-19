@@ -7,13 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 admin = User.create email: 'coryspitzer@gmail.com',
-                    # set this environment variable in your .bashrc or similar; 
-                    # see tinyurl.com/pdfp2be
+                    # set this environment variable in a .env file and make sure
+                    # to add that file to your gitignore if the code is public;
+                    # see env.example and tinyurl.com/pdfp2be for details
                     password: ENV['PORTFOLIO_PASSWORD'],
                     admin: true
 
-guest = User.create email: 'guest@guest.com',
-                    password: '12341234',
+guest = User.create email: 'guest@coryspitzer.com',
+                    password: 'guest',
                     admin: false
 
 (0..45).each do |i|

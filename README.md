@@ -10,7 +10,6 @@
 TODO:
  * Fix the 'the add reference form adds a reference' spec, which fails because
    it wants AJAX to reload the page.
- * Use environment variables for password security
  * Improve styling, maybe with bootswatch
  * Add Unique landing page
  * Add Content
