@@ -17,9 +17,11 @@
 <%= flash[:notice] %>
 
 <% @projects.each do |project| %>
-  <h3><%= link_to project.name, project_path(project) %></h3>
+  <p>
+    <h3><%= link_to project.name, project_path(project) %></h3>
+    <% if project.link %>
+      <h5><%= link_to 'Source Code', project.link %></h5>
+    <% end %>
+  </p>
   <p><%= project.description.html_safe %></p>
-  <% if project.link %>
-    <p><%= link_to 'Source Code', project.link %></p>
-  <% end %>
 <% end %>

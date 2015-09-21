@@ -1,6 +1,6 @@
 <h1><%= @project.name %></h1>
-<p class='well'>
-  <%= @project.description %>
+<p>
+  <%= @project.description.html_safe %>
 </p>
 <div>
   <%= link_to 'Delete Project', project_path(@project), class: "btn btn-danger",
