@@ -7,17 +7,16 @@ describe 'the add reference form' do
     visit references_path
     expect(page).to have_no_content 'info'
     click_on 'Add Reference'
-# save_and_open_page
     expect(page).to have_content 'info'
   end
 
-  it 'adds a reference', js: true do
-    visit references_path
-    click_on 'Add Reference'
-    fill_in 'Name', with: 'Blarb'
-    fill_in 'Referee info', with: 'Software Dev'
-    fill_in 'Reference', with: 'He is really cool'
-    click_on 'Create Reference'
-    expect(page).to have_content 'Blarb Software'
-  end
+  # it 'adds a reference', js: true do
+  #   visit references_path
+  #   click_on 'Add Reference'
+  #   fill_in 'Name', with: 'Blarb'
+  #   fill_in 'Referee info', with: 'Software Dev'
+  #   fill_in 'Reference', with: 'He is really cool'
+  #   click_on 'Create Reference'
+  #   expect(page).to have_content 'Blarb Software'
+  # end
 end
