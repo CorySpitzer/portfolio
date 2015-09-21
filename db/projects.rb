@@ -1,7 +1,5 @@
 Project.create name: 'Personal Portfolio App',
                description: '<p>A personal portfolio application - the very project you are using right now!</p>
-
-                             <p>Written in Ruby</p>
                              <ul>
                               <li>Built with Ruby-on-Rails 4.2.3 using a Postgres database</li>
                               <li>Tested with Rspec, Capybara, FactoryGirl, Poltergeist and SimpleCov</li>
