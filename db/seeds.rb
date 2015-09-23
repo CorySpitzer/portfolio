@@ -6,9 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# Create all the references and projects in their own files
-require_relative './references'
-require_relative './projects'
+# Create all the references, projects, and skills in their own seed files
+require_relative './seeds/references'
+require_relative './seeds/projects'
+require_relative './seeds/skills'
 
 admin = User.create email: 'coryspitzer@gmail.com',
                     # set this environment variable in a .env file and make sure
