@@ -8,11 +8,7 @@
 ###### \*Under Construction\* but see a version of it up at [Heroku](http://www.coryspitzer.com/)
 
 TODO:
- * Fix the 'the add reference form adds a reference' spec, which fails because
-   it wants AJAX to reload the page.
  * Improve styling, maybe with bootswatch
- * Add Unique landing page
- * Add Content
 
 #### Installation (assuming you have the necessary tools installed on a Unix system):
 
