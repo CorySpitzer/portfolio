@@ -12,6 +12,7 @@ gem 'devise'
 gem 'bcrypt'
 gem 'will_paginate', '> 3.0'
 gem 'simple_form'
+gem 'bootswatch-rails'
 
 group :production do
   # Make heroku work better, see

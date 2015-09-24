@@ -1,0 +1,45 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ * Add '=' to uncomment, like *=
+ * require_tree .
+ * require_self
+ */
+
+// Pick a theme and insert it below:
+// amelia - Over the top
+// cosmo - solid Vanilla
+// cyborg - reasonable black
+// Journal - readable, not super stylish
+// Lumen - subtle
+// Paper - stylish minimalism
+// Readable - but ugly
+// sandstone - lil' to green
+// United - Awesome Ubuntu, issue with signed in showing up
+// Yeti - boring-ish
+
+// Order matters here, see github.com/maxim/bootswatch-rails
+@import "bootstrap-sprockets";
+@import "bootswatch/lumen/variables";
+@import "bootstrap";
+@import "bootswatch/lumen/bootswatch";
+
+// Whatever application styles you have go last
+//@import "base";
+
+#new-reference {
+  display: none;
+}
+
+// p.navbar-text {
+//   color: black;
+// }

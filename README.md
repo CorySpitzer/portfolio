@@ -7,9 +7,6 @@
 
 ###### \*Under Construction\* but see a version of it up at [Heroku](http://www.coryspitzer.com/)
 
-TODO:
- * Improve styling, maybe with bootswatch
-
 #### Installation (assuming you have the necessary tools installed on a Unix system):
 
   * Clone the repo and `cd` into the project directory
