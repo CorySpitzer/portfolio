@@ -1,0 +1,13 @@
+.skills
+  - if @skills.any?
+    %ul
+      - @skills.each do |skill|
+        %li
+          %b
+            %span.skill-name= skill.name
+          \-
+          %span= skill.description
+        %br/
+  - else
+    %p
+      No skills right now ;) check back soon!
