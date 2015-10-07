@@ -11,7 +11,7 @@ require_relative './seeds/references'
 require_relative './seeds/projects'
 require_relative './seeds/skills'
 
-admin = User.create email: 'coryspitzer@gmail.com',
+admin = User.create email: 'cory@coryspitzer.com',
                     # set this environment variable in a .env file and make sure
                     # to add that file to your gitignore if the code is public;
                     # see env.example and tinyurl.com/pdfp2be for details
