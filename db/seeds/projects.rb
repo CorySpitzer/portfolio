@@ -3,6 +3,7 @@ Project.create name: 'Personal Portfolio App',
                              <ul>
                               <li>Built with Ruby-on-Rails 4.2.3 using a Postgres database</li>
                               <li>Tested with Rspec, Capybara, FactoryGirl, Poltergeist and SimpleCov</li>
+                              <li>Markup with Haml</li>
                               <li>Styled with Bootstrap</li>
                               <li>Deployed with Heroku</li>
                               <li>User authentication and authorization with Devise</li>

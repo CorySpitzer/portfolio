@@ -1,5 +1,5 @@
 Skill.create name: "Ruby-On-Rails",
-             description: "Create well-tested, well-documented, RESTful Rails Web applications, working by myself, pair programming and in larger teams, that include user authorization and authentication, AJAX, and database-backed models, and interact with various API's"
+             description: "Create well-tested, well-documented, RESTful Rails Web applications, working by myself, pair programming and in larger teams, that include user authorization and authentication, AJAX, database-backed models, and interact with various API's"
 
 Skill.create name: "Test-driven Development",
              description: "Develop software gradually by writting specifications of the next most basic functionality"
