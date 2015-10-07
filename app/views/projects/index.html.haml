@@ -14,7 +14,10 @@
 = flash[:notice]
 - @projects.each do |project|
   %p
-  %h3= link_to project.name, project_path(project)
   - if project.link
-    %h5= link_to 'Source Code', project.link
+    %h3= link_to project.name, project.link
+  - else
+    %h3= link_to project.name, project_path(project)
+  - if user_signed_in? and current_user.admin == true
+    = link_to 'show project', project_path(project)
   %p= project.description.html_safe
