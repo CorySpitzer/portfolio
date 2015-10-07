@@ -1,0 +1,10 @@
+%h2 Posts:
+- if @posts.any?
+  - @posts.each do |post|
+    %h4
+      = link_to post.title, post_path(post)
+    %div
+      = post.body.html_safe
+  = will_paginate @posts
+- else
+  %h3 No posts, please check back again later!

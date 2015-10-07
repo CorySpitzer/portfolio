@@ -1,0 +1,42 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title CorySpitzer.com | Portfolio
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %nav.navbar.navbar-default
+      .container-fluid
+        / Brand and toggle get grouped for better mobile display
+        .navbar-header
+          %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          = link_to 'Portfolio', root_path, class: "navbar-brand"
+        / Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.special-color
+            - if user_signed_in? and current_user.admin == true
+              %li= link_to 'Add Project', new_project_path
+            %li= link_to 'References', references_path
+            %li= link_to 'Blog', posts_path
+            %li= link_to 'Skills', skills_path
+          %ul.nav.navbar-nav.navbar-right
+            - if user_signed_in?
+              %p.navbar-text
+                Signed in as #{link_to current_user.email, user_path(current_user)}
+              %li= link_to "Sign out", destroy_user_session_path, method: :delete
+              %li= link_to "Edit Profile", edit_user_registration_path
+            - else
+              %li= link_to "Sign in", new_user_session_path
+              %li= link_to "Create Account", new_user_registration_path
+        / /.navbar-collapse
+      / /.container-fluid
+    .container
+      %p.notice= notice
+      %p.alert= alert
+      = yield

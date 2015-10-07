@@ -1,0 +1,11 @@
+- if @project.errors.any?
+  %h3#error-header Please fix these errors:
+  %ul
+    - @project.errors.full_messages.each do |error_message|
+      %li= error_message
+= form_for @project do |f|
+  = f.label :name
+  = f.text_field :name
+  = f.label :description
+  = f.text_field :description
+  = f.submit

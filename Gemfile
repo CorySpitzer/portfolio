@@ -13,6 +13,7 @@ gem 'bcrypt'
 gem 'will_paginate', '> 3.0'
 gem 'simple_form'
 gem 'bootswatch-rails'
+gem "haml-rails", "~> 0.9"
 
 group :production do
   # Make heroku work better, see
