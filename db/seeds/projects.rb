@@ -21,3 +21,7 @@ Project.create name: 'Pig Dice',
 Project.create name: 'Epiwiki',
                description: 'A collaboratively implemented app for documenting code written with Ruby, using the Sinatra web framework that implements a basic wiki functionality for editing entries.',
                link: 'https://github.com/CorySpitzer/epiwiki'
+
+Project.create name: 'Contributions to Shiftcal',
+               description: 'The calendar for Shift2Bikes (Shift2Bikes.org/cal) written in PHP.' ,
+               link: 'https://github.com/ShiftGithub/shiftcal'
